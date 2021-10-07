@@ -1,6 +1,6 @@
 
 <?php 
-    $paragrafo = 'Questa concessionaria è autorizzata a vendere  i marchi di: Guzzi, Honda, Suzuky, Piaggio, Ducati';
+    $paragrafo = 'Questa concessionaria è autorizzata a vendere  i marchi di: Guzzi, Honda, Suzuki, Piaggio, Ducati';
     $lenParagrafo = strlen($paragrafo);
     $marca_moto = $_GET['marca'];
     $censura = array('honda', 'ducati');
@@ -10,6 +10,7 @@
 <p> La lunghezza del paragrafo è di: <?php echo $lenParagrafo ?> caratteri</p>
 
 <!-- normale -->
+
 <h3> <?php echo str_ireplace($marca_moto ,"***", $paragrafo); ?> </h3>
 
 <!-- Con array -->
