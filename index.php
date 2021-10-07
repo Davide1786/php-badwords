@@ -9,6 +9,10 @@
 <h3> <?php echo $paragrafo ?></h3>
 <p> La lunghezza del paragrafo è di: <?php echo $lenParagrafo ?> caratteri</p>
 
+<!-- normale -->
+<h3> <?php echo str_ireplace($marca_moto ,"***", $paragrafo); ?> </h3>
+
+<!-- Con array -->
 <h3> <?php echo str_ireplace($censura ,"***", $paragrafo); ?> </h3>
 
 <p> la lunghezza del paragrafo è di: <?php echo strlen(str_ireplace($censura ,"***", $paragrafo)); ?> caratteri </p>
